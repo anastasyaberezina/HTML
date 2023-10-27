@@ -1,0 +1,139 @@
+    @import 'vars';
+    @import 'mixins';
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .body {
+        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .center {
+        padding-left: calc(50% - $widthSite/2);
+        padding-right: calc(50% - $widthSite/2);
+    }
+    
+    .registration {
+        display: flex;
+        flex-direction: row;
+        gap: 128px;
+        &__left {
+            width: 359px;
+            margin-bottom: 96px;
+            gap: 20px;
+            flex-direction: column;
+        }
+        &__right {
+            width: 652px;
+            flex-direction: column;
+            padding-top: 64px;
+            padding-bottom: 96px;
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            padding-right: 230px;
+            padding-bottom: 277px;
+        }
+        &__form {
+            &_name {
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            &_input {
+                width: 359px;
+                height: 44px;
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            &_details {
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            &_email {
+                width: 360px;
+                height: 45px;
+            }
+            &_password {
+                width: 359px;
+                height: 44px;
+            }
+            &_text {
+                width: 359px;
+                height: 32px;
+                color: #B1B1B1;
+                font-family: Lato;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            &_button {
+                width: 167px;
+                height: 50px;
+                background-color: #F16D7F;
+                @include centerFlex;
+                &_p {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        &__form-indicator {
+            display: flex;
+            flex-direction: row;
+            &_male {
+                width: 17px;
+                height: 17px;
+            }
+            &_female {
+                width: 17px;
+                height: 17px;
+            }
+            &_gender {
+                color: #000;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+        &_h1 {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal
+        }
+        &_p {
+            width: 652px;
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-right: 230px;
+            padding-left: 718px;
+        }
+        &_ul {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            list-style: none;
+        }
+    }

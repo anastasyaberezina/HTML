@@ -1,0 +1,194 @@
+    @import 'vars';
+    @import 'mixins';
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .body {
+        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+    }
+    
+    .box-content {
+        width: $widthSite;
+    }
+    
+    .filter-sort {
+        padding-top: 51px;
+        box-sizing: border-box;
+        height: 132px;
+        display: flex;
+        gap: 16px;
+    }
+    
+    .filter {
+        padding-top: 13px;
+        width: 360px;
+        box-sizing: border-box;
+        z-index: 10;
+        background-color: #fff;
+        padding-top: 0;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        &[open] {
+            background: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            position: absolute;
+        }
+        &[open] .filter__head {
+            color: $colorTitle;
+        }
+        &[open] path {
+            fill: $colorTitle;
+        }
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding-left: 16px;
+        }
+        &__heading {
+            padding-left: 230px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: $colorText;
+        }
+        &__item {
+            margin-top: 16px;
+        }
+        &__link-box {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding: 24px 16px;
+        }
+        &__link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            text-decoration: none;
+            &:hover {
+                color: $colorTitle;
+            }
+        }
+        &__head {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            padding: 8px 11px 11px 11px;
+            border-bottom: 1 px solid #EBEBEB;
+            border-left: 5px solid $colorTitle;
+        }
+        &__item [open] .filter__head {
+            color: $colorTitle;
+        }
+    }
+    
+    .sort {
+        margin-top: 12px;
+        margin-left: 346px;
+        margin-bottom: 87px;
+        gap: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 490px;
+        &_details {
+            position: relative;
+        }
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &__check {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+        }
+        &__check {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #6F6E6E;
+        }
+        &__heading {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
+        &__box {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            padding: 7px 30px 11px 9px;
+            left: -9px;
+            top: 22px;
+            z-index: 10px;
+            margin-left: 800px;
+            margin-top: 300px;
+            position: absolute;
+        }
+        &__check {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-style: normal;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #6F6E6E;
+        }
+    }
+    
+    #sort__check1,
+    #sort__check2,
+    #sort__check3,
+    #sort__check4 {
+        cursor: pointer;
+    }
+    
+    .footersection {}
+    
+    .product__item {
+        background-color: $backgroundColorProduct;
+    }
+    
+    .product__item2 {
+        background-color: $backgroundColorProduct;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .catalog__image2_1 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .catalog__image2_2 {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+    }
